@@ -42,12 +42,8 @@ st.markdown("""
 if "books" not in st.session_state:
     st.session_state.books = load_books()
 
-if "votes" not in st.session_state:
-    st.session_state.votes = load_votes()
-
 def auto_save():
     save_books(st.session_state.books)
-    save_votes(st.session_state.votes)
 
 # ==================== VIEW BOOKS ====================
 st.markdown('<p class="main-header">📖 Get to know the submitted books!</p>',
