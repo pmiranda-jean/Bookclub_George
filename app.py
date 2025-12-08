@@ -7,8 +7,7 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 from utils.data_manager import (
-    load_books, save_books
-    
+    load_books, save_books, ensure_data_directory, commit_to_github
 )
 from config.settings import (
     APP_TITLE, MAX_VOTES_PER_PERSON, TOTAL_POINTS, TOP_BOOKS_TO_DISPLAY
