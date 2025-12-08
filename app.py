@@ -68,8 +68,8 @@ else:
 
             # -------- COVER COLUMN --------
             with col1:
-                clean_title = book["title"].replace(" ", "_").replace(":", "").replace("?", "")
-                cover_path = f"covers/{clean_title}.jpg"
+                title = book["title"]
+                cover_path = f"covers/{title}.jpg"
 
                 if os.path.exists(cover_path):
                     st.image(cover_path, use_container_width=True)
